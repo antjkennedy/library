@@ -97,7 +97,7 @@ export default class Decoder {
         let endIndex: number = correctedBits.length;
         let latchTable = Table.UPPER; // table most recently latched to
         let shiftTable = Table.UPPER; // table to use for the next read
-        let result: string;
+        let result: string = '';
         let index = 0;
         while (index < endIndex) {
             if (shiftTable === Table.BINARY) {
